@@ -1,0 +1,51 @@
+{
+  "routes": [
+    {
+      "nexthop": {
+        "gateways": [
+          {
+            "flexibleTunnelProfile": {
+              "attributes": {
+                "vxlan": {
+                  "destinationAddress": {
+                    "inet6": {
+                      "addrString": "abcd::20:0:0:1"
+                    }
+                  }, 
+                  "sourceUdpPortRange": {
+                    "max": 65535, 
+                    "min": 49152
+                  }, 
+                  "sourcePrefix": {
+                    "inet6": {
+                      "addrString": "abcd::20:0:0:2"
+                    }
+                  }, 
+                  "flags": 8, 
+                  "vni": 2, 
+                  "destinationUdpPort": 4789, 
+                  "sourcePrefixLen": 128 
+                }
+              }, 
+              "interfaceName": "fti0.48"
+            }
+          }
+        ]
+      }, 
+      "key": {
+        "destPrefixLen": 128, 
+        "table": {
+          "rttName": {
+            "name": "0113d92171084d118320eaa988f24ea0.inet6.0"
+          }
+        }, 
+        "destPrefix": {
+          "inet6": {
+            "addrString": "abcd::40:1:1:1"
+          }
+        }, 
+        "cookie": "1"
+      }
+    }
+ ]
+}

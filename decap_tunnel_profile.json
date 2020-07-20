@@ -1,0 +1,34 @@
+{
+  "tunnel_profiles": [
+    {
+      "name": "ebgp_cust_rt_fti0_48",
+      "interface_name": "fti0.48",
+      "action": "DECAPSULATE",
+      "attributes": {
+        "vxlan": {
+          "destinationAddress": {
+            "inet": {
+              "addrString": "157.55.252.109"
+            }
+          }, 
+          "sourceUdpPortRange": {
+            "max": 65535, 
+            "min": 49152
+          }, 
+          "sourcePrefix": {
+            "inet": {
+              "addrString": "10.3.129.101"
+            }
+          }, 
+          "flags": 8, 
+          "vni": 992652,
+          "destinationUdpPort": 65330,
+          "destinationMac": {
+            "addrString": "1a:2b:3c:4d:5e:6f"
+          }, 
+          "sourcePrefixLen": 32
+        }
+      }
+    }
+   ]
+}
